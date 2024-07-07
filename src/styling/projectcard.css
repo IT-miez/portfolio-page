@@ -1,0 +1,36 @@
+
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 900px;
+    outline: black 1px solid;
+    gap: 50px;
+}
+
+.project-card-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.project-tech-item {
+    list-style-type: none;
+    outline: gray 1px solid;
+    padding: 0.4rem;
+
+    background-color: #252525;
+    border: 2px solid #777;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    max-width: 80px;
+}

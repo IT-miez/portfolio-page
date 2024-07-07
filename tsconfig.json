@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "types": ["@types/three"],
+  },
   "files": [],
   "references": [
     {
