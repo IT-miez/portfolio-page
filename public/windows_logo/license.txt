@@ -1,0 +1,11 @@
+Model Information:
+* title:	Windows Logo
+* source:	https://sketchfab.com/3d-models/windows-logo-e22e1e1fc71640ecb14b1b29a92da2b2
+* author:	tg (https://sketchfab.com/tgaaaaaaaaaa)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Windows Logo" (https://sketchfab.com/3d-models/windows-logo-e22e1e1fc71640ecb14b1b29a92da2b2) by tg (https://sketchfab.com/tgaaaaaaaaaa) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

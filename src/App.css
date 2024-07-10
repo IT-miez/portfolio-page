@@ -25,6 +25,43 @@ canvas {
   gap: 50px;
 }
 
+.pihole-container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pihole-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  
+}
+
+.pihole-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  text-align: left;
+}
+
+.pihole-image {
+  width: auto;
+  height: 40px;
+}
+
+.pihole-summary {
+  font-size: 1rem;
+  text-align: left;
+  width: 400px;
+  margin: 0;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

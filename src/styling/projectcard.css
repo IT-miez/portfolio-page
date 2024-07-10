@@ -1,4 +1,6 @@
-
+a {
+    color: white;
+}
 
 .project-card {
     display: flex;
@@ -6,14 +8,40 @@
     justify-content: center;
     flex-direction: row;
     width: 900px;
-    outline: black 1px solid;
+    border: rgb(240, 240, 240) 2px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #777;
     gap: 50px;
+}
+
+.project-header {
+    display: flex;
+    padding-left: 40px;
+    justify-content: flex-start;
+}
+
+.project-card-image {
+    width: 300px;
+    height: auto;
+
+}
+
+.project-summary {
+    padding-left: 40px;
+    width: 400px;
+    margin: 0;
+    text-align: left;
 }
 
 .project-card-left {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project-card-right {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-tech {
@@ -25,12 +53,23 @@
 
 .project-tech-item {
     list-style-type: none;
-    outline: gray 1px solid;
+    outline: #fffefe 1px;
     padding: 0.4rem;
 
-    background-color: #252525;
+    background-color: #b9b9b9;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+
     border: 2px solid #777;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba(192, 192, 192, 0.8);
     border-radius: 8px;
     max-width: 80px;
+}
+
+.project-links {
+    color: white;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

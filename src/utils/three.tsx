@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import React, { useRef, useState } from 'react'
-import { Canvas, useFrame, ThreeElements, useLoader } from '@react-three/fiber'
+import { Canvas, useFrame, ThreeElements, useLoader, Vector3 } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export function Box(props: ThreeElements['mesh']) {
@@ -22,27 +22,25 @@ export function Box(props: ThreeElements['mesh']) {
   )
 }
 
-// Model component
-export function Model(props: ThreeElements['group']) {
-  const gltf = useLoader(GLTFLoader, "/scene.gltf") // Update the path to your model
-  return <primitive object={gltf.scene} {...props} />
+interface ModelProps {
+  gltf: any;
+  scale?: Vector3;
 }
 
 // Model component
-export function Model2(props: ThreeElements['group']) {
-  const gltf = useLoader(GLTFLoader, "/linux_tux/scene.gltf") // Update the path to your model
-  // Example scale factor, adjust as needed
-  const scale = [0.05, 0.05, 0.05]; // Scale down by 50%
+export function Model({ 
+  gltf, 
+  scale=[1, 1, 1], 
+  position=[0, 0, 0],
+  rotation = [0, 0, 0] 
+}: any) {
   
-  // Example position, adjust as needed
-  const position = [0, -2, -5]; // Move back on the z-axis
-
-  return (
+ return (
     <primitive 
       object={gltf.scene} 
       scale={scale} 
-      position={position} 
-      {...props} 
+      position={position}
+      rotation={rotation}  
     />
   );
 }
