@@ -1,4 +1,6 @@
 #root {
+  /* Google font */
+  font-family: "Roboto", sans-serif;
   /*max-width: 1280px;*/
   margin: 0 auto;
   padding: 0rem;
@@ -16,7 +18,59 @@ canvas {
 }
 
 
+.lowerheader {
+  margin-bottom: 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-section-header {
+  margin: auto;
+}
+
+.contact-logo {
+  width: 32px;
+  height: auto;
+  
+}
+
+
+.invert-color {
+  filter: invert(1);
+}
+
+.top-section-logos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  flex-direction: column;
+  gap: 15px;
+
+  margin: 20px;
+}
+
+/*Doesnt work*/
+.canvasdiv {
+  margin-bottom: 100px;
+}
+
+.skilldiv {
+  margin-bottom: 100px;
+}
+
+.projectdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  margin-bottom: 100px;
+}
+
 .main-content{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +80,7 @@ canvas {
 }
 .aboutme {
   width: 900px;
+  margin-bottom: 100px;
 }
 
 .aboutme-summary {
@@ -34,20 +89,22 @@ canvas {
 }
 
 .pihole-container {
-  margin-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 80px;
 }
 
 .pihole-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  
+  align-items: center;
 }
+
+
 
 .pihole-header {
   display: flex;
@@ -61,6 +118,15 @@ canvas {
 .pihole-image {
   width: auto;
   height: 40px;
+}
+
+.pihole-lefttext {
+  display: flex;
+  width: 100%;
+  font-weight: bolder;
+  padding-left: 50px;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .pihole-summary {
