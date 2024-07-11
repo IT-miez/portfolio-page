@@ -50,6 +50,20 @@ function App() {
       
 
       <div className='main-content'>
+        <div className='aboutme'>
+          <h1 className="lowerHeader">About me</h1>
+          <p className='aboutme-summary'>
+            I'm a second year Master's degree student in LUT University, studying Software Engineering and Digital Transformation.
+            I have been able to work with many different kinds of people and different kinds of issues, which has been great for learning.
+            <br></br><br></br>
+            I'm interested in learning more about Software Development, whether it is front-, back- or fullstack development. 
+            I also like learning more about configuration regarding infrastructure, DevOps and automating stuff that you can automate.
+            <br></br><br></br>
+            I have also studied coding languages, configuration skills, version controlling and other relevant topics on my free time.
+            More about my coding projets can be found on my GitHub.
+          </p>
+        </div>
+      
         <h1 className="lowerHeader">Skills</h1>
         <div className='skill-card-container'>
          <SkillCard
@@ -148,7 +162,7 @@ function App() {
       <ProjectCard 
         header={'Fullstack Blog App'} 
         summary={'A fullstack blogsite application made with React, Node.js and MongoDB.'} 
-        technologies={["MongoDB", "React", "Node.js", "Vitest"]} 
+        technologies={["MongoDB", "React", "Node.js", "Vitest", "Express  "]} 
         imgURL={"/project_images/blog_api_gif.gif"}
         repository={"https://github.com/IT-miez/blog-api-project"}
         />
@@ -165,7 +179,7 @@ function App() {
       <ProjectCard 
         header={'Fullstack App'} 
         summary={'My first fullstack app made with React, Node.js and MongoDB.'} 
-        technologies={["MongoDB", "React", "Node.js", "MUI"]} 
+        technologies={["MongoDB", "React", "Node.js", "MUI", "Express"]} 
         imgURL={"/project_images/fullstack_site.PNG"}
         repository={"https://github.com/IT-miez/courseproject_advanced_web_applications"}
         />
@@ -183,7 +197,7 @@ function App() {
         <h1 className="lowerHeader">Other hobbies</h1>
         <div className='pihole-header'>
           <img className='pihole-image' src={"/project_images/pihole.png"}></img>
-          <h2>Pi-hole + Rasbperry Pi</h2>
+          <h2>Pi-hole + Raspberry Pi</h2>
         </div>
         
         <div className='pihole-div'>
@@ -196,11 +210,12 @@ function App() {
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
               <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
             </Canvas>
+            <Credits credits={"A Raspberry Pi 3 device."}/>
             <h3>What is Pi-hole?</h3>
             <p className='pihole-summary'>
-              Pi-hole is an open-source DNS sinkhole tool that can help protect your devices from unwanted ads, block malicious sites and has minimal hardware requirements.
+              <a href="https://docs.pi-hole.net/">Pi-hole</a> is an open-source <a href="https://www.enisa.europa.eu/topics/incident-response/glossary/dns-sinkhole">DNS sinkhole</a> tool that can help protect your devices from unwanted ads, block malicious sites and has minimal hardware requirements.
               <br></br><br></br>
-              It can run on Raspberry Pi devices, starting from Raspberry Pi Zero W model and up.
+              It can run on <a href="https://www.raspberrypi.com/">Raspberry Pi</a> devices, starting from Raspberry Pi Zero W model and up, but can also be run on Linux based devices.
             </p>
             <h3>A hobby device</h3>
             <p className='pihole-summary'>
