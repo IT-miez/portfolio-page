@@ -2,13 +2,14 @@ import { Suspense, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Box, Model } from "./utils/three.tsx"
+import { Box, Model, ModelRotating } from "./utils/three.tsx"
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from "@react-three/drei";
 import { ProjectCard } from './components/ProjectCard.tsx'
 import { Credits } from './components/Credits.tsx'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { SkillCard } from './components/SkillCard.tsx'
 
 /*
 Important test code
@@ -49,6 +50,100 @@ function App() {
       
 
       <div className='main-content'>
+        <h1 className="lowerHeader">Skills</h1>
+        <div className='skill-card-container'>
+         <SkillCard
+          name={"React"}
+          logo={"/skill_logos/react.svg"}
+        />
+        <SkillCard
+          name={"JavaScript"}
+          logo={"/skill_logos/javascript.svg"}
+        />
+        <SkillCard
+          name={"TypeScript"}
+          logo={"/skill_logos/typescript.svg"}
+        />
+        <SkillCard
+          name={"HTML5"}
+          logo={"/skill_logos/html.svg"}
+        />
+        <SkillCard
+          name={"CSS"}
+          logo={"/skill_logos/css.svg"}
+        />
+        <SkillCard
+          name={"MongoDB"}
+          logo={"/skill_logos/mongodb.svg"}
+        />
+        <SkillCard
+          name={"EsLint"}
+          logo={"/skill_logos/eslint.svg"}
+        />
+        <SkillCard
+          name={"Node.js"}
+          logo={"/skill_logos/nodejs.svg"}
+        />
+        <SkillCard
+          name={"npm"}
+          logo={"/skill_logos/npm.svg"}
+        /> 
+        <SkillCard
+          name={"Git"}
+          logo={"/skill_logos/git.svg"}
+        />
+        <SkillCard
+          name={"Webpack"}
+          logo={"/skill_logos/webpack.svg"}
+        /> 
+        <SkillCard
+          name={"Docker"}
+          logo={"/skill_logos/docker.svg"}
+        /> 
+        <SkillCard
+          name={"VSCode"}
+          logo={"/skill_logos/vscode.svg"}
+        /> 
+        <SkillCard
+          name={"Visual Studio Code"}
+          logo={"/skill_logos/visualstudio.svg"}
+        /> 
+        <SkillCard
+          name={"C"}
+          logo={"/skill_logos/clanguage.svg"}
+        /> 
+        <SkillCard
+          name={"C++"}
+          logo={"/skill_logos/cplusplus.svg"}
+        /> 
+        <SkillCard
+          name={"C#"}
+          logo={"/skill_logos/csharp.svg"}
+        /> 
+        <SkillCard
+          name={"Java"}
+          logo={"/skill_logos/java.svg"}
+        /> 
+        <SkillCard
+          name={"Python"}
+          logo={"/skill_logos/python.svg"}
+        /> 
+        <SkillCard
+          name={"PostgreSQL"}
+          logo={"/skill_logos/postgres.svg"}
+        /> 
+        <SkillCard
+          name={"SQLite"}
+          logo={"/skill_logos/sqlite.svg"}
+        /> 
+        
+        </div>
+        
+
+
+
+
+
         <h1 className="lowerHeader">Projects</h1>
       <ProjectCard 
         header={'Fullstack Blog App'} 
@@ -94,7 +189,7 @@ function App() {
         <div className='pihole-div'>
             <Canvas style={{ width: '450px', height: '300px' , background: 'grey'}}>
               <Suspense fallback={null}>
-                <Model gltf={raspberrypi} scale={[0.7, 0.7, 0.7]} position={[0, 0, 0]} rotation = {[Math.PI / 4, 0, 0]}/>  
+                <ModelRotating gltf={raspberrypi} scale={[0.7, 0.7, 0.7]} position={[0, 0, 0]} rotation = {[Math.PI / 4, 0, 0]}/>  
                 <OrbitControls enableZoom={true} />
               </Suspense>
               <ambientLight intensity={Math.PI / 2} />

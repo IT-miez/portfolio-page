@@ -1,12 +1,6 @@
 
 import '../styling/projectcard.css'
 
-/*
-Important test code
-<Box position={[-1.2, 0, 0]} />
-<Box position={[1.2, 0, 0]} />
-*/
-
 type ProjectCardProps = {
     header: string;
     summary: string;

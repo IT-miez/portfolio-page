@@ -44,3 +44,29 @@ export function Model({
     />
   );
 }
+
+export function ModelRotating({ 
+  gltf, 
+  scale = [1, 1, 1], 
+  position = [0, 0, 0], 
+  rotation = [0, 0, 0] 
+}) {
+  const ref = useRef();
+
+  // Use useFrame to update the rotation on each frame
+  useFrame(() => {
+    if (ref.current) {
+      ref.current.rotation.y += 0.001;
+    }
+  });
+
+  return (
+    <primitive 
+      ref={ref}
+      object={gltf.scene} 
+      scale={scale} 
+      position={position} 
+      rotation={rotation} 
+    />
+  );
+}
