@@ -18,8 +18,44 @@ import windowsLogo from "/windows_logo/scene.gltf"
 import raspberryPi from "/raspberrypi/scene.gltf"
 
 import githubLogo from '/contact_logos/github.svg'
+import linkedinLogo from '/contact_logos/linkedin.svg'
+import emailLogo from '/contact_logos/email.svg'
 
+
+// Logos for Technologies
 import reactSVG from "/skill_logos/react.svg"
+import javascriptSVG from "/skill_logos/javascript.svg"
+import typescriptSVG from "/skill_logos/typescript.svg"
+import html5SVG from "/skill_logos/html.svg"
+import cssSVG from  "/skill_logos/css.svg"
+import mongodbSVG from "/skill_logos/mongodb.svg"
+import eslintSVG from "/skill_logos/eslint.svg"
+import nodejsSVG from "/skill_logos/nodejs.svg"
+import npmSVG from "/skill_logos/npm.svg"
+import gitSVG from "/skill_logos/git.svg"
+import webpackSVG from "/skill_logos/webpack.svg"
+import dockerSVG from "/skill_logos/docker.svg"
+import postgresSVG from "/skill_logos/postgres.svg"
+import sqliteSVG from "/skill_logos/sqlite.svg"
+import vscSVG from "/skill_logos/vscode.svg"
+import visualstudioSVG from "/skill_logos/visualstudio.svg"
+import cSVG from "/skill_logos/clanguage.svg"
+import cppSVG from "/skill_logos/cplusplus.svg"
+import csharpSVG from "/skill_logos/csharp.svg"
+import javaSVG from "/skill_logos/java.svg"
+import pythonSVG from "/skill_logos/python.svg"
+import windowsSVG from "/skill_logos/windows.svg"
+import linuxSVG from "/skill_logos/linux.svg"
+
+
+// Project images and gifs
+import blogapiGIF from "/project_images/blog_api_gif.gif"
+import weatherappGIF from "/project_images/weather-app-gif.gif"
+import fullstackPNG from "/project_images/fullstack_site.PNG"
+import chesslandingpagePNG from "/project_images/chess_site.PNG"
+
+import piholelogoPNG from "/project_images/pihole.png"
+
 /*
 Important test code
 <Box position={[-1.2, 0, 0]} />
@@ -47,9 +83,9 @@ function App() {
             <img className='contact-logo invert-color' src={githubLogo}></img>
           </a>
           <a href='https://linkedin.com/in/IT-opiskelija'>
-            <img className='contact-logo' src='/contact_logos/linkedin.svg'></img></a>
+            <img className='contact-logo' src={linkedinLogo}></img></a>
           <a href='mailto:veikkosakari01@gmail.com'>
-            <img className='contact-logo invert-color' src='/contact_logos/email.svg'></img>
+            <img className='contact-logo invert-color' src={emailLogo}></img>
           </a>
         </div>
       </div>
@@ -95,91 +131,91 @@ function App() {
           />
           <SkillCard
             name={"JavaScript"}
-            logo={"/skill_logos/javascript.svg"}
+            logo={javascriptSVG}
           />
           <SkillCard
             name={"TypeScript"}
-            logo={"/skill_logos/typescript.svg"}
+            logo={typescriptSVG}
           />
           <SkillCard
             name={"HTML5"}
-            logo={"/skill_logos/html.svg"}
+            logo={html5SVG}
           />
           <SkillCard
             name={"CSS"}
-            logo={"/skill_logos/css.svg"}
+            logo={cssSVG}
           />
           <SkillCard
             name={"MongoDB"}
-            logo={"/skill_logos/mongodb.svg"}
+            logo={mongodbSVG}
           />
           <SkillCard
             name={"EsLint"}
-            logo={"/skill_logos/eslint.svg"}
+            logo={eslintSVG}
           />
           <SkillCard
             name={"Node.js"}
-            logo={"/skill_logos/nodejs.svg"}
+            logo={nodejsSVG}
           />
           <SkillCard
             name={"npm"}
-            logo={"/skill_logos/npm.svg"}
+            logo={npmSVG}
           /> 
           <SkillCard
             name={"Git"}
-            logo={"/skill_logos/git.svg"}
+            logo={gitSVG}
           />
           <SkillCard
             name={"Webpack"}
-            logo={"/skill_logos/webpack.svg"}
+            logo={webpackSVG}
           /> 
           <SkillCard
             name={"Docker"}
-            logo={"/skill_logos/docker.svg"}
+            logo={dockerSVG}
           /> 
           <SkillCard
             name={"PostgreSQL"}
-            logo={"/skill_logos/postgres.svg"}
+            logo={postgresSVG}
           /> 
           <SkillCard
             name={"SQLite"}
-            logo={"/skill_logos/sqlite.svg"}
+            logo={sqliteSVG}
           /> 
           <SkillCard
             name={"VSCode"}
-            logo={"/skill_logos/vscode.svg"}
+            logo={vscSVG}
           /> 
           <SkillCard
             name={"Visual Studio Code"}
-            logo={"/skill_logos/visualstudio.svg"}
+            logo={visualstudioSVG}
           /> 
           <SkillCard
             name={"C"}
-            logo={"/skill_logos/clanguage.svg"}
+            logo={cSVG}
           /> 
           <SkillCard
             name={"C++"}
-            logo={"/skill_logos/cplusplus.svg"}
+            logo={cppSVG}
           /> 
           <SkillCard
             name={"C#"}
-            logo={"/skill_logos/csharp.svg"}
+            logo={csharpSVG}
           /> 
           <SkillCard
             name={"Java"}
-            logo={"/skill_logos/java.svg"}
+            logo={javaSVG}
           /> 
           <SkillCard
             name={"Python"}
-            logo={"/skill_logos/python.svg"}
+            logo={pythonSVG}
           /> 
           <SkillCard
             name={"Windows"}
-            logo={"/skill_logos/windows.svg"}
+            logo={windowsSVG}
           /> 
           <SkillCard
             name={"Linux"}
-            logo={"/skill_logos/linux.svg"}
+            logo={linuxSVG}
           /> 
         
           </div>
@@ -196,7 +232,7 @@ function App() {
             header={'Fullstack Blog App'} 
             summary={'A fullstack blogsite application made with React, Node.js and MongoDB.'} 
             technologies={["MongoDB", "React", "Node.js", "Vitest", "Express  "]} 
-            imgURL={"/project_images/blog_api_gif.gif"}
+            imgURL={blogapiGIF}
             repository={"https://github.com/IT-miez/blog-api-project"}
             />
 
@@ -204,7 +240,7 @@ function App() {
             header={'Weather App'} 
             summary={'A weather application that utilizes a third party API for weather data.'} 
             technologies={["JavaScript", "CSS", "HTML"]} 
-            imgURL={"/project_images/weather-app-gif.gif"} 
+            imgURL={weatherappGIF} 
             repository={"https://github.com/IT-miez/Weather-App-Project"}
             liveSite={"https://it-miez.github.io/Weather-App-Project/"}
             />
@@ -213,7 +249,7 @@ function App() {
             header={'Fullstack App'} 
             summary={'My first fullstack app made with React, Node.js and MongoDB.'} 
             technologies={["MongoDB", "React", "Node.js", "MUI", "Express"]} 
-            imgURL={"/project_images/fullstack_site.PNG"}
+            imgURL={fullstackPNG}
             repository={"https://github.com/IT-miez/courseproject_advanced_web_applications"}
             />
 
@@ -221,7 +257,7 @@ function App() {
             header={'Chess Fan-site'} 
             summary={'A simple site made using Flexbox, CSS and HTML, while doing The Odin Project - a web curriculum.'} 
             technologies={["CSS", "HTML"]} 
-            imgURL={"/project_images/chess_site.PNG"}
+            imgURL={chesslandingpagePNG}
             liveSite={"https://it-miez.github.io/Landing-Page-Project-ChessFansite/"}
             repository={"https://github.com/IT-miez/Landing-Page-Project-ChessFansite"}
             />
@@ -231,7 +267,7 @@ function App() {
       <div className='pihole-container'>
         <h1 className="lowerHeader">Other interests</h1>
         <div className='pihole-header'>
-          <img className='pihole-image' src={"/project_images/pihole.png"}></img>
+          <img className='pihole-image' src={piholelogoPNG}></img>
           <h2>Pi-hole + Raspberry Pi</h2>
         </div>
         
