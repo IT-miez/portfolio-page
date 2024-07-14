@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "types": ["@types/three"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
   },
   "files": [],
   "references": [

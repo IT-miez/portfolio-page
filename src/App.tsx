@@ -11,7 +11,11 @@ import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { SkillCard } from './components/SkillCard.tsx'
 import Background from 'three/examples/jsm/renderers/common/Background.js'
-
+import puheElin from '/scene.gltf'
+import linuX from "/linux_tux/scene.gltf"
+import reacT from "/react_logo/scene.gltf"
+import windowsLogo from "/windows_logo/scene.gltf"
+import raspberryPi from "/raspberrypi/scene.gltf"
 /*
 Important test code
 <Box position={[-1.2, 0, 0]} />
@@ -21,12 +25,12 @@ Important test code
 function App() {
   const [count, setCount] = useState(0)
 
-  const puhelin = useLoader(GLTFLoader, "/scene.gltf")
+  const puhelin = useLoader(GLTFLoader, puheElin)
   // <Model gltf={puhelin} position={[0, 6, -6]}/>
-  const linux = useLoader(GLTFLoader, "/linux_tux/scene.gltf") 
-  const react = useLoader(GLTFLoader, "/react_logo/scene.gltf") 
-  const windowslogo = useLoader(GLTFLoader, "/windows_logo/scene.gltf")
-  const raspberrypi = useLoader(GLTFLoader, "/raspberrypi/scene.gltf")
+  const linux = useLoader(GLTFLoader, linuX) 
+  const react = useLoader(GLTFLoader, reacT) 
+  const windowslogo = useLoader(GLTFLoader, windowsLogo)
+  const raspberrypi = useLoader(GLTFLoader, raspberryPi)
 
 
   return (
