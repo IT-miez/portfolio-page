@@ -1,7 +1,6 @@
 import * as THREE from 'three'
-import React, { useRef, useState } from 'react'
-import { Canvas, useFrame, ThreeElements, useLoader, Vector3 } from '@react-three/fiber'
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { useRef, useState } from 'react'
+import { useFrame, ThreeElements, useLoader, Vector3 } from '@react-three/fiber'
 
 export function Box(props: ThreeElements['mesh']) {
   const meshRef = useRef<THREE.Mesh>(null!)
