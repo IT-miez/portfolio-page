@@ -130,6 +130,14 @@ function App() {
             logo={"/skill_logos/docker.svg"}
           /> 
           <SkillCard
+            name={"PostgreSQL"}
+            logo={"/skill_logos/postgres.svg"}
+          /> 
+          <SkillCard
+            name={"SQLite"}
+            logo={"/skill_logos/sqlite.svg"}
+          /> 
+          <SkillCard
             name={"VSCode"}
             logo={"/skill_logos/vscode.svg"}
           /> 
@@ -158,12 +166,12 @@ function App() {
             logo={"/skill_logos/python.svg"}
           /> 
           <SkillCard
-            name={"PostgreSQL"}
-            logo={"/skill_logos/postgres.svg"}
+            name={"Windows"}
+            logo={"/skill_logos/windows.svg"}
           /> 
           <SkillCard
-            name={"SQLite"}
-            logo={"/skill_logos/sqlite.svg"}
+            name={"Linux"}
+            logo={"/skill_logos/linux.svg"}
           /> 
         
           </div>
