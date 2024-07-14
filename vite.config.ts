@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/portfolio-page/',
-  assetsInclude: ["**/*.gltf", "**/*.svg","**/*.png", "**/*.jpg"]
+  assetsInclude: ["**/*.gltf", "**/*.svg","**/*.PNG", "**/*.jpg", "**/*.gif"]
 })

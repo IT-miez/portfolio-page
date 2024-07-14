@@ -16,6 +16,10 @@ import linuX from "/linux_tux/scene.gltf"
 import reacT from "/react_logo/scene.gltf"
 import windowsLogo from "/windows_logo/scene.gltf"
 import raspberryPi from "/raspberrypi/scene.gltf"
+
+import githubLogo from '/contact_logos/github.svg'
+
+import reactSVG from "/skill_logos/react.svg"
 /*
 Important test code
 <Box position={[-1.2, 0, 0]} />
@@ -40,7 +44,7 @@ function App() {
         <h1 className='top-section-header'>Portfolio page</h1>
         <div className='top-section-logos'>
           <a href='https://github.com/IT-miez'>
-            <img className='contact-logo invert-color' src='/contact_logos/github.svg'></img>
+            <img className='contact-logo invert-color' src={githubLogo}></img>
           </a>
           <a href='https://linkedin.com/in/IT-opiskelija'>
             <img className='contact-logo' src='/contact_logos/linkedin.svg'></img></a>
@@ -87,7 +91,7 @@ function App() {
         <div className='skill-card-container'>
           <SkillCard
             name={"React"}
-            logo={"/skill_logos/react.svg"}
+            logo={reactSVG}
           />
           <SkillCard
             name={"JavaScript"}
