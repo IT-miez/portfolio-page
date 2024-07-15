@@ -8,3 +8,12 @@
     color: rgb(85, 84, 84);
     font-style: italic;
 }
+
+@media screen and (max-width: 800px) {
+
+    .credits-text {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+  
+  }

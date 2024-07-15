@@ -113,3 +113,57 @@ a {
     background-color: #008000;
     transform: scale(1.05);
 }
+
+
+
+
+@media screen and (max-width: 800px) {
+    .project-card {
+        flex-direction: column;
+        width: 80%;
+        padding: 20px;
+        margin: 15px;
+        gap: 20px; 
+    }
+
+    .project-card-left, .project-card-right {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-card-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project-summary {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-tech {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .project-links {
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .repository-link, .site-link {
+        width: 80%;
+        text-align: center;
+    }
+
+    .project-tech {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0px;
+    }
+}

@@ -272,7 +272,7 @@ function App() {
         </div>
         
         <div className='pihole-div'>
-            <Canvas style={{ width: '450px', height: '300px' , background: 'grey'}}>
+            <Canvas style={{ background: 'grey'}} className='raspicanvas'>
               <Suspense fallback={null}>
                 <ModelRotating gltf={raspberrypi} scale={[0.7, 0.7, 0.7]} position={[0, 0, 0]} rotation = {[Math.PI / 4, 0, 0]}/>  
                 <OrbitControls enableZoom={true} />

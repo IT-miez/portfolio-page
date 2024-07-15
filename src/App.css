@@ -58,6 +58,9 @@ canvas {
 }
 
 .skilldiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 100px;
 }
 
@@ -90,6 +93,7 @@ canvas {
 
 .pihole-container {
   display: flex;
+  width: inherit;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -99,6 +103,7 @@ canvas {
 
 .pihole-div {
   display: flex;
+  width: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -122,9 +127,8 @@ canvas {
 
 .pihole-lefttext {
   display: flex;
-  width: 100%;
+  width: 400px;
   font-weight: bolder;
-  padding-left: 50px;
   align-items: flex-start;
   text-align: left;
 }
@@ -170,4 +174,104 @@ canvas {
 
 .read-the-docs {
   color: #888;
+}
+
+.raspicanvas {
+  width: '450px';
+  height: '300px';
+  background: 'grey';
+}
+
+@media screen and (max-width: 800px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+  .aboutme {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .aboutme-summary {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+
+  .pihole-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .pihole-summary {
+    box-sizing: border-box;
+    width: 100% ;
+    padding: 10px;
+  }
+
+  .pihole-lefttext{
+    padding-left: 15px;
+  }
+
+  .pihole-div {
+    width: 100%;
+  }
+
+  .raspicanvas {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .aboutme-summary {
+    width: 80%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+
+  .pihole-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .pihole-summary {
+    box-sizing: border-box;
+    width: 100% ;
+    padding: 10px;
+  }
+
+  .pihole-lefttext{
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .pihole-div {
+    width: 100%;
+  }
+
+  .raspicanvas {
+    width: 100%;
+    height: auto;
+  }
+
 }
