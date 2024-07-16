@@ -18,6 +18,8 @@ canvas {
 }
 
 
+
+
 .lowerheader {
   margin-bottom: 20px;
 }
@@ -52,9 +54,53 @@ canvas {
   margin: 20px;
 }
 
-/*Doesnt work*/
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .canvasdiv {
   margin-bottom: 100px;
+
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.overlay-left {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.overlay-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-right: 10x;
+  color: white;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  pointer-events: all;
 }
 
 .skilldiv {
@@ -275,3 +321,4 @@ canvas {
   }
 
 }
+

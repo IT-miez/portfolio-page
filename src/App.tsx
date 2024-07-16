@@ -76,22 +76,9 @@ function App() {
   return (
     <>
       <div className='whole-page'>
-      <div className='top-section'>
-        <h1 className='top-section-header'>Portfolio page</h1>
-        <div className='top-section-logos'>
-          <a href='https://github.com/IT-miez'>
-            <img className='contact-logo invert-color' src={githubLogo}></img>
-          </a>
-          <a href='https://linkedin.com/in/IT-opiskelija'>
-            <img className='contact-logo' src={linkedinLogo}></img></a>
-          <a href='mailto:veikkosakari01@gmail.com'>
-            <img className='contact-logo invert-color' src={emailLogo}></img>
-          </a>
-        </div>
-      </div>
       
       <div className='canvasdiv'>
-        <Canvas style={{ width: '100%', height: '99vh' }}>
+        <Canvas className='canvas' style={{ width: '100%', height: '99vh' }}>
           <Suspense fallback={null}>
             <Model gltf={linux} scale={[0.05, 0.05, 0.05]} position={[0, -2, -5]}/>
             <Model gltf={react} scale={[0.5, 0.5, 0.5]} position={[4, 0, -5]}/>
@@ -103,6 +90,27 @@ function App() {
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
           <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         </Canvas>
+        <div className="overlay">
+          <div className='overlay-left'>
+            <h1>Portfolio Page</h1>
+            <p>Welcome to my ongoing portfolio site project!</p>
+          </div>
+          <div className='overlay-right'>
+            <div className='top-section-logos'>
+              <a href='https://github.com/IT-miez'>
+                <img className='contact-logo invert-color' src={githubLogo}></img>
+              </a>
+              <a href='https://linkedin.com/in/IT-opiskelija'>
+                <img className='contact-logo' src={linkedinLogo}></img></a>
+              <a href='mailto:veikkosakari01@gmail.com'>
+                <img className='contact-logo invert-color' src={emailLogo}></img>
+              </a>
+            </div>
+          </div>
+          
+
+        </div>
+        
       </div>
       </div>
       
