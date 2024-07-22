@@ -241,7 +241,7 @@ function App() {
             summary={'A fullstack blogsite application made with React, Node.js and MongoDB.'} 
             technologies={["MongoDB", "React", "Node.js", "Vitest", "Express  "]} 
             imgURL={blogapiGIF}
-            liveSite='https://blog-api-project-young-log-1285.fly.dev/'
+            liveSite='https://blog-api-project-gamma.vercel.app//'
             repository={"https://github.com/IT-miez/blog-api-project"}
             />
 
