@@ -26,7 +26,7 @@ export function ProjectCard({ header, summary, technologies, imgURL="/project_im
                 </ul>
                 <div className='project-links'>
                     <a href={repository}><p className='repository-link'>Repository</p></a>
-                    {liveSite!="0" && <div><a href={liveSite}><p className='site-link'>Live</p></a></div>}
+                    {liveSite!="0" && <a href={liveSite}><p className='site-link'>Live</p></a>}
                 </div>
             </div>
         </div>
