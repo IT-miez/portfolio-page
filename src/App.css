@@ -9,6 +9,7 @@
 
 :root {
   color-scheme: light dark;
+  overflow-x: hidden;
 }
 
 body, html, #root {
@@ -16,6 +17,7 @@ body, html, #root {
   padding: 0;
   width: 100%;
   height: 100%;
+
 }
 canvas {
   display: block;
@@ -78,7 +80,7 @@ canvas {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 99%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +130,6 @@ canvas {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   gap: 50px;
 }
 .aboutme {
