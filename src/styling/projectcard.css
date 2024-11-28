@@ -8,10 +8,10 @@ a {
     justify-content: center;
     flex-direction: row;
     width: 900px;
-    border: rgb(51, 51, 51) 2px solid;
+    border: light-dark(rgb(161, 161, 161), rgb(51, 51, 51)) 2px solid;
     border-radius: 5px;
-    box-shadow: 0 0 10px #5c5c5c;
-    background-color: rgb(49, 49, 49);
+    box-shadow: 0 0 10px light-dark(rgb(170, 170, 170), #5c5c5c);
+    background-color: light-dark(rgb(100 100 100),rgb(49 49 49));
     gap: 50px;
 }
 
@@ -19,6 +19,8 @@ a {
     display: flex;
     padding-left: 40px;
     justify-content: flex-start;
+
+    color: light-dark(white, #efefec);
 }
 
 .project-card-image {
@@ -32,6 +34,8 @@ a {
     width: 400px;
     margin: 0;
     text-align: left;
+
+    color: light-dark(white, #efefec);
 }
 
 .project-card-left {
@@ -78,7 +82,7 @@ a {
 .repository-link {
     background-color: #6d6d6d;
     border: none;
-    color: black;
+    color: light-dark(white, black);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
