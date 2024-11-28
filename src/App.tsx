@@ -53,6 +53,7 @@ import blogapiGIF from "/project_images/blog_api_gif.gif"
 import weatherappGIF from "/project_images/weather-app-gif.gif"
 import fullstackPNG from "/project_images/fullstack_site.PNG"
 import chesslandingpagePNG from "/project_images/chess_site.PNG"
+import jobitoryPNG from "/project_images/jobitoryPNG.PNG"
 
 import piholelogoPNG from "/project_images/pihole.png"
 
@@ -252,6 +253,14 @@ function App() {
             imgURL={weatherappGIF} 
             repository={"https://github.com/IT-miez/Weather-App-Project"}
             liveSite={"https://it-miez.github.io/Weather-App-Project/"}
+            />
+
+          <ProjectCard 
+            header={'Jobitory'} 
+            summary={'A collaborative project where I work on the backend.'} 
+            technologies={["GraphQL", "Apollo", "Prisma", "Express", "PostgreSQL"]} 
+            imgURL={jobitoryPNG}
+            repository={"https://github.com/IT-miez/jobitory"}
             />
           
           <ProjectCard 
