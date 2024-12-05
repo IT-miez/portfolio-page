@@ -239,7 +239,7 @@ function App() {
           
           <ProjectCard 
             header={'Fullstack Blog App'} 
-            summary={'A fullstack blogsite application made with React, Node.js and MongoDB.'} 
+            summary={'A fullstack blogsite application made with React, Node.js and MongoDB. NOTE! Backend starts slow on live site - hosted on a free service.'} 
             technologies={["MongoDB", "React", "Node.js", "Vitest", "Express  "]} 
             imgURL={blogapiGIF}
             liveSite='https://blog-api-project-gamma.vercel.app//'
