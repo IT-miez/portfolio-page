@@ -26,6 +26,7 @@ import emailLogo from '/contact_logos/email.svg'
 import reactSVG from "/skill_logos/react.svg"
 import javascriptSVG from "/skill_logos/javascript.svg"
 import typescriptSVG from "/skill_logos/typescript.svg"
+import rustSVG from "/skill_logos/rust_language.svg"
 import html5SVG from "/skill_logos/html.svg"
 import cssSVG from  "/skill_logos/css.svg"
 import mongodbSVG from "/skill_logos/mongodb.svg"
@@ -54,6 +55,7 @@ import weatherappGIF from "/project_images/weather-app-gif.gif"
 import fullstackPNG from "/project_images/fullstack_site.PNG"
 import chesslandingpagePNG from "/project_images/chess_site.PNG"
 import jobitoryPNG from "/project_images/jobitoryPNG.PNG"
+import ventureappPNG from "/project_images/ventureApp.PNG"
 
 import piholelogoPNG from "/project_images/pihole.png"
 
@@ -120,11 +122,11 @@ function App() {
         <div className='aboutme'>
           <h1 className="lowerHeader">About me</h1>
           <p className='aboutme-summary'>
-            I'm a second year Master's degree student in LUT University, studying Software Engineering and Digital Transformation.
+            I'm a second year Master's degree student in LUT University, graduating soon from Software Engineering and Digital Transformation.
             I have been able to work with many different kinds of people and different kinds of issues, which has been great for learning.
             <br></br><br></br>
-            I'm interested in learning more about Software Development, whether it is front-, back- or fullstack development. 
-            I also like learning more about configuration regarding infrastructure, DevOps and automating stuff that you can automate.
+            I'm interested in learning more about Software Development whether it is front-, back- or fullstack development. 
+            I also like learning more about configuration, automation and security tools, themes regarding infrastructure, DevOps and Cybersecurity.
             <br></br><br></br>
             I have also studied coding languages, configuration skills, version controlling and other relevant topics on my free time.
             More about my coding projets can be found on my GitHub.
@@ -146,6 +148,18 @@ function App() {
             name={"TypeScript"}
             logo={typescriptSVG}
           />
+          <SkillCard
+            name={"Java"}
+            logo={javaSVG}
+          /> 
+          <SkillCard
+            name={"PostgreSQL"}
+            logo={postgresSVG}
+          />
+          <SkillCard
+            name={"Rust"}
+            logo={rustSVG}
+          /> 
           <SkillCard
             name={"HTML5"}
             logo={html5SVG}
@@ -183,10 +197,6 @@ function App() {
             logo={dockerSVG}
           /> 
           <SkillCard
-            name={"PostgreSQL"}
-            logo={postgresSVG}
-          /> 
-          <SkillCard
             name={"SQLite"}
             logo={sqliteSVG}
           /> 
@@ -209,10 +219,6 @@ function App() {
           <SkillCard
             name={"C#"}
             logo={csharpSVG}
-          /> 
-          <SkillCard
-            name={"Java"}
-            logo={javaSVG}
           /> 
           <SkillCard
             name={"Python"}
@@ -244,6 +250,13 @@ function App() {
             imgURL={blogapiGIF}
             liveSite='https://blog-api-project-gamma.vercel.app//'
             repository={"https://github.com/IT-miez/blog-api-project"}
+            />
+            <ProjectCard 
+            header={'Venture App'} 
+            summary={'My latest, ongoing code project. An app to track your ventures, what they require, what has been done, how much they have cost, and see them on a timeline + feed.'} 
+            technologies={["React", "TypeScript", "Java", "Postgres"]} 
+            imgURL={ventureappPNG}
+            repository={"https://github.com/IT-miez/Venture-App"}
             />
 
           <ProjectCard 
