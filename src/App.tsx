@@ -122,11 +122,11 @@ function App() {
         <div className='aboutme'>
           <h1 className="lowerHeader">About me</h1>
           <p className='aboutme-summary'>
-            I'm a second year Master's degree student in LUT University, graduating soon from Software Engineering and Digital Transformation.
+            I'm a recent Master's in Software Engineering graduate from LUT University, currently working as a project researcher doing Fullstack programming and teaching tasks.
             I have been able to work with many different kinds of people and different kinds of issues, which has been great for learning.
             <br></br><br></br>
-            I'm interested in learning more about Software Development whether it is front-, back- or fullstack development. 
-            I also like learning more about configuration, automation and security tools, themes regarding infrastructure, DevOps and Cybersecurity.
+            I'm interested in getting more experience in my software skills. 
+            I also like learning more about Cybersecurity, DevOps, automation and digitalization.
             <br></br><br></br>
             I have also studied coding languages, configuration skills, version controlling and other relevant topics on my free time.
             More about my coding projets can be found on my GitHub.
